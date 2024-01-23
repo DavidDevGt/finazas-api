@@ -1,8 +1,8 @@
 const BaseModel = require("./BaseModel");
 
 class DiaryEntry extends BaseModel {
-    constructor(db) {
-        super(db, 'diary_entries');
+    constructor() {
+        super('diary_entries');
     }
 
     findByUserId(userId) {

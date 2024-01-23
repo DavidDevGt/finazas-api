@@ -1,8 +1,8 @@
 const BaseModel = require("./BaseModel");
 
 class Category extends BaseModel {
-  constructor(db) {
-    super(db, 'categories');
+  constructor() {
+    super('categories');
   }
 }
 

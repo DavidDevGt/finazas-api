@@ -1,8 +1,8 @@
 const BaseModel = require("./BaseModel");
 
 class Transaction extends BaseModel {
-    constructor(db) {
-        super(db, 'transactions');
+    constructor() {
+        super('transactions');
     }
 
     findByUserId(userId) {

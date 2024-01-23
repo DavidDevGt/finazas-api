@@ -1,8 +1,8 @@
 const BaseModel = require("./BaseModel");
 
 class SavingsGoal extends BaseModel {
-    constructor(db) {
-        super(db, 'savings_goals');
+    constructor() {
+        super('savings_goals');
     }
 
     // Métodos específicos para SavingsGoal
