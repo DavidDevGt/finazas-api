@@ -12,6 +12,14 @@ class Transaction extends BaseModel {
     findByUserIdAndDateRange(userId, startDate, endDate) {
         return this.db.query(`SELECT * FROM ${this.tableName} WHERE user_id = ? AND date BETWEEN ? AND ?`, [userId, startDate, endDate]);
     }
+
+    findByUserIdAndTransactionType(userId, transactionType) {
+        return this.db.query(`SELECT * FROM ${this.tableName} WHERE user_id = ? AND transaction_type = ?`, [userId, transactionType]);
+    }
+
+    findByUserIdAndCategory(userId, category) {
+        return this.db.query(`SELECT * FROM ${this.tableName} WHERE user_id = ? AND category = ?`, [userId, category]);
+    }
 }
 
 module.exports = Transaction;
