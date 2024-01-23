@@ -65,7 +65,7 @@ class UserController extends BaseController {
   logout(req, res) {
     res.json({
       message:
-        "Cierre de sesión exitoso. Por favor, elimine el token del lado del cliente.",
+        "Cierre de sesión exitoso. Por favor, dev revisar el token del lado del cliente.",
     });
   }
 }
